@@ -1,9 +1,10 @@
 from flask import Flask, request, render_template_string
 import requests
+import os
 
 app = Flask(__name__)
 
-API_TOKEN = "JSAcO4lxSL_ABqvvIlfPfohHAIZoAed6qfRCc7ZX"
+API_TOKEN = os.environ.get("API_TOKEN")
 API_URL = "https://api.infosimples.com/api/v2/consultas/detran/sp/debitos"
 #API_URL = 'https://api.infosimples.com/api/v2/consultas/ecrvsp/veiculos/base-sp'
 
