@@ -1,6 +1,3 @@
-# consulta-placa-infosimples
-Consulta de Placa de Veículo via API InfoSimples
-
 # Consulta de Placa de Veículo com Flask + API InfoSimples
 
 Este projeto é um microserviço construído em Python usando Flask que realiza consultas de placas de veículos na API da [InfoSimples](https://www.infosimples.com.br/). A aplicação retorna informações detalhadas do veículo, incluindo dados como marca, modelo, ano, Renavam e proprietário (dependendo do plano contratado).
@@ -30,4 +27,14 @@ Este projeto é um microserviço construído em Python usando Flask que realiza 
 ```bash
 # Clone o repositório
 git clone https://github.com/caduunisal/consulta-placa-infosimples.git
+cd consulta-placa-infosimples
+
+# (Opcional) Crie e ative um ambiente virtual
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+
+# Instale as dependências
+pip install -r requirements.txt
+
 
